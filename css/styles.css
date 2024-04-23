@@ -11,12 +11,23 @@ Date:22-4-2024 */
 
 :root{
     --bs-primary: #372865;
+    --bs-btn-hover-bg:red;
+    --bs-btn-hover-color:red;
+    --bs-btn-hover-border-color:green;
     --nav-min-height: 120px;
 }
 
-.btn-primary{
-    background-color: var( --bs-primary)!important;
+.btn-primary,
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
 }
+.btn:hover {
+    color: var(--bs-btn-hover-color) !important;
+    background-color: var(--bs-btn-hover-bg) !important;
+    border-color: var(--bs-btn-hover-border-color) !important;
+  }
+  
 h1{
     font-size: 4rem;
 }
@@ -40,6 +51,9 @@ form .form-control{
 form a{
   
     margin: 0 5px;
+}
+footer img{
+    margin: 5px;
 }
 
 @media (max-width: 768px) {
