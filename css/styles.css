@@ -1,0 +1,66 @@
+/* Author:Abish
+Date:22-4-2024 */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --bs-primary: #372865;
+    --nav-min-height: 120px;
+}
+
+.btn-primary{
+    background-color: var( --bs-primary)!important;
+}
+h1{
+    font-size: 4rem;
+}
+
+header{
+    min-height: var(--nav-min-height);
+}
+section{
+    min-height: calc(100vh- var(--nav-min-height));
+
+}
+footer{
+    min-height: auto;
+}
+form{
+    display:flex;
+}
+form .form-control{
+    width: 50%;
+}
+form a{
+  
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    form{
+        display:block ;
+    }
+    header{
+        min-height:80px;
+    }
+
+    form .form-control{
+        width: 100%;
+    }
+    form a{
+        width: 100%;
+        margin: 5px 0!important;
+    }
+}
+
